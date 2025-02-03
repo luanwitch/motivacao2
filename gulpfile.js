@@ -32,8 +32,9 @@ gulp.task('reload', function() {
 gulp.task('watch', function() {
     gulp.watch('dist/**/*.html', gulp.series('reload'));
     gulp.watch('dist/**/*.js', gulp.series('reload'));
-    gulp.task('build', gulp.series('styles', 'scripts'));
 });
+
+gulp.task('build', gulp.series('styles', 'scripts'));
 
 // Tarefa padrão: executa 'server' e 'watch' em sequência
 gulp.task('default', gulp.series('server', 'watch'));
