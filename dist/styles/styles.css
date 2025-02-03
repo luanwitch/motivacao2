@@ -1,0 +1,138 @@
+    /* Importando fontes do Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+    /* Reset Básico */
+    *,
+    *::before,
+    *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    /* Corpo da página */
+    body {
+    font-family: 'Roboto', sans-serif; /* Fonte para o corpo do texto */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente bacana de fundo */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 10px;
+    }
+
+    /* Container centralizado */
+    .container {
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    }
+
+    /* Título */
+    .titulo {
+    font-family: 'Montserrat', sans-serif; /* Fonte para o título */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #f4f4f4;
+    }
+
+    /* Frase */
+    #frase {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    font-weight: 400;
+    color: #ddd;
+    }
+
+    /* Estilo do botão */
+    button {
+    background-color: #2575fc;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+    background-color: #6a11cb;
+    transform: scale(1.05);
+    }
+
+    /* Animação de fade-in para o conteúdo */
+    .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    }
+
+    /* Media Queries para Responsividade */
+
+    /* Celulares (modo retrato) */
+    @media (max-width: 480px) {
+    .titulo {
+        font-size: 1.8rem;
+    }
+    #frase {
+        font-size: 1rem;
+    }
+    button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+    }
+
+    /* Tablets e celulares (modo paisagem) */
+    @media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+    }
+    #frase {
+        font-size: 1.1rem;
+    }
+    button {
+        padding: 12px 26px;
+        font-size: 1rem;
+    }
+    .container {
+        width: 90%;
+    }
+    }
+
+    /* Desktop */
+    @media (min-width: 1024px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+    #frase {
+        font-size: 1.2rem;
+    }
+    button {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    .container {
+        width: 60%;
+    }
+    }

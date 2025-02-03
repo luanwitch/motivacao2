@@ -1,0 +1,40 @@
+@corFundo: #f8f9fa;
+@corTexto: #333;
+@corBotao: #ff4081;
+@corBotaoHover: #e91e63;
+@fontePrincipal: 'Arial', sans-serif;
+
+body {
+    background-color: @corFundo;
+    font-family: @fontePrincipal;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    color: @corBotao;
+}
+
+button {
+    background: @corBotao;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+    &:hover {
+        background: @corBotaoHover;
+    }
+}
