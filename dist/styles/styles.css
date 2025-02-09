@@ -135,4 +135,14 @@
     .container {
         width: 60%;
     }
+
+    #frase {
+        font-size: 1.2rem;
+        margin: 20px 0;
+        font-weight: 400;
+        color: #ddd;
+        transition: opacity 0.5s ease-in-out; /* Suaviza a transição */
+    }
+    
+
     }
